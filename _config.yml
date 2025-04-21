@@ -1,0 +1,8 @@
+title: "Coming Soon"
+description: "Personal site of a security researcher & maker"
+baseurl: ""
+url: "https://mon4rch-0x0.github.io"
+theme: minima
+
+plugins:
+  - jekyll-feed
