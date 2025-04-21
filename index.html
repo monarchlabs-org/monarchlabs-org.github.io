@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coming Soon | mon4rch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #2e3338; /* Lightened dark grey background */
+      color: #39ff14; /* Green text color */
+      font-family: 'Fira Code', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+
+    .blink {
+      animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 1em;
+      font-size: 1.1em;  /* Increased font size */
+      color: #ffffff;    /* White color for the footer text */
+      font-weight: bold; /* Make footer text bold for better visibility */
+    }
+  </style>
+</head>
+<body>
+  <h1>> <span id="typed"></span><span class="blink">_</span></h1>
+  <div class="footer">Crafting something that fuses code, circuits, sound, and stories. Stay tuned.</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed('#typed', {
+      strings: ["Booting up...", "Loading portfolio...", "Establishing secure connection...", "Coming Soon."],
+      typeSpeed: 50,
+      backSpeed: 25,
+      backDelay: 1500,
+      startDelay: 500,
+      loop: true
+    });
+  </script>
+</body>
+</html>
